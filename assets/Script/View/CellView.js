@@ -23,6 +23,7 @@ cc.Class({
         //this.model = null;
         this.isSelect = false;
     },
+    
     initWithModel: function(model){
         this.model = model;
         var x = model.startX;

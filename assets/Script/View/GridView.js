@@ -110,7 +110,7 @@ cc.Class({
             var view = null;
             if(!viewInfo){
                 var type = model.type;
-                var aniView = cc.instantiate(this.aniPre[type]);
+                var aniView = cc.instantiate(this.animalPrefab[type]);
                 aniView.parent = this.node;
                 var cellViewScript = aniView.getComponent("CellView");
                 cellViewScript.initWithModel(model);

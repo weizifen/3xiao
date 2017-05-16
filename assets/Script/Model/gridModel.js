@@ -295,6 +295,7 @@ gameModel.prototype.cleanCmd = function(){
 }
 
 gameModel.prototype.exchangeCell = function(pos1, pos2){
+    console.log("交换cell")
     var tmpModel = this.cells[pos1.y][pos1.x];
     this.cells[pos1.y][pos1.x] = this.cells[pos2.y][pos2.x];
     this.cells[pos1.y][pos1.x].x = pos1.x;

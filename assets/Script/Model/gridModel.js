@@ -7,6 +7,7 @@ export default class GameModel{
             this.cellTypeNum = 5;
             this.cellCreateType = []; // 升成种类只在这个数组里面查找
     }
+    // cellTypeNum cell类型有多少种
     // 初始化  确认几行几列
     // 创造CellModel对象 for1 创造CellModel
     // 初始化CellModel
@@ -15,7 +16,6 @@ export default class GameModel{
         //  每次创造的类型
         this.setCellTypeNum(cellTypeNum || this.cellTypeNum);
         for(var i = 1;i<=GRID_WIDTH;i++){
-            // console.log(GRID_WIDTH)
             this.cells[i] = [];
             for(var j = 1;j <= GRID_HEIGHT;j++){
                 this.cells[i][j] = new CellModel();
@@ -28,7 +28,6 @@ export default class GameModel{
                     flag = false;
                     // 初始化cell的类型
                     this.cells[i][j].init(this.getRandomCellType());
-                    // console.log(this.checkPoint(j, i))
                     let result = this.checkPoint(j, i)[0];
                     if(result.length > 2){
                         flag = true;

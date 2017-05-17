@@ -22,6 +22,7 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.gameModel=new GameModel();
+        // cell的类型有几种
         this.gameModel.init(5);
         var gridScript=this.grid.getComponent("GridView");
         // 设置控制

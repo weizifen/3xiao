@@ -1,3 +1,4 @@
+import GameModel from '../Model/GridModel'
 cc.Class({
     extends: cc.Component,
 

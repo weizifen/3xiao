@@ -20,7 +20,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.gameModel=new gameModel();
+        this.gameModel=new GameModel();
         this.gameModel.init(5);
         var gridScript=this.grid.getComponent("GridView");
         // 设置控制

@@ -41,7 +41,7 @@ cc.Class({
             this.cellViews[i] = [];
             for(var j = 1;j<=9;j++){
                 var type = cellsModels[i][j].type;
-                console.log(type)
+                // console.log(type)
                 var aniView = cc.instantiate(this.animalPrefab[type]);
                 aniView.parent = this.node;
                 var cellViewScript = aniView.getComponent("CellView");

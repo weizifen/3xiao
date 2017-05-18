@@ -187,8 +187,9 @@ cc.Class({
 
     // 点击态
     selectCell: function(cellPos){
-        console.log(this.controller);
+        // console.log(this.controller);
         var result = this.controller.selectCell(cellPos);
+        console.log(result)
         var changeModels = result[0];
         var effectsQueue = result[1];
         this.playEffect(effectsQueue);
